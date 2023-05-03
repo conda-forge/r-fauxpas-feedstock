@@ -1,11 +1,11 @@
-About r-fauxpas
-===============
+About r-fauxpas-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-fauxpas-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ropensci/fauxpas
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-fauxpas-feedstock/blob/main/LICENSE.txt)
 
 Summary: HTTP error helpers. Methods included for general purpose HTTP error handling, as well as individual methods for every HTTP status code, both via status code numbers as well as their descriptive names.
 
