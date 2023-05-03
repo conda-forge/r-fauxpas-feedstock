@@ -1,4 +1,4 @@
-{% set version = '0.5.0' %}
+{% set version = "0.5.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,10 +10,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fauxpas_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fauxpas/fauxpas_{{ version }}.tar.gz
-  sha256: c87b6fdb98c684a919663e42a36d96a87292b3aaa0230d8a5d536b7e16fe2e89
+  sha256: 84d07361a146b419cb1dcb7751654e3d5f159cf2704faf498e5ea56c8de61ef6
 
 build:
-  merge_build_host: True  # [win]
+  merge_build_host: true  # [win]
   number: 0
   noarch: generic
   rpaths:
@@ -43,12 +43,10 @@ test:
 about:
   home: https://github.com/ropensci/fauxpas
   license: MIT
-  summary: HTTP error helpers. Methods included for general purpose HTTP error handling, as well
-    as individual methods for every HTTP status code, both via status code numbers as
-    well as their descriptive names.
+  summary: HTTP error helpers. Methods included for general purpose HTTP error handling, as well as individual methods for every HTTP status code, both via status code numbers as well as their descriptive names.
   license_family: MIT
   license_file:
-    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/MIT
     - LICENSE
 
 extra:
