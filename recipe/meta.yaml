@@ -1,4 +1,4 @@
-{% set version = "0.5.2" %}
+{% set version = "0.6.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/fauxpas_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/fauxpas/fauxpas_{{ version }}.tar.gz
-  sha256: 84d07361a146b419cb1dcb7751654e3d5f159cf2704faf498e5ea56c8de61ef6
+  sha256: 741fb28d7d41548e205b03fce24c8799e4a2e7639cf939ad4a727192541de947
 
 build:
-  number: 3
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
